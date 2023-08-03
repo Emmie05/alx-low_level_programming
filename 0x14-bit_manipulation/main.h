@@ -2,30 +2,30 @@
 #define MAIN_H
 
 #include <stdio.h>
+#include <stdlib.h>
 
-/* 0. Binary to unsigned int */
+/* Task 0 - Binary to Unsigned Int */
 unsigned int binary_to_uint(const char *b);
 
-/* 1. Print binary representation */
+/* Task 1 - Print Binary */
 void print_binary(unsigned long int n);
 
-/* 2. Get the value of a bit at a given index */
+/* Task 2 - Get Bit */
 int get_bit(unsigned long int n, unsigned int index);
 
-/* 3. Set the value of a bit to 1 at a given index */
+/* Task 3 - Set Bit */
 int set_bit(unsigned long int *n, unsigned int index);
 
-/* 4. Set the value of a bit to 0 at a given index */
+/* Task 4 - Clear Bit */
 int clear_bit(unsigned long int *n, unsigned int index);
 
-/* 5. Number of bits needed to flip to get from one number to another */
+/* Task 5 - Flip Bits */
 unsigned int flip_bits(unsigned long int n, unsigned long int m);
 
-/* 6. Check the endianness */
+/* Task 6 - Endianness */
 int get_endianness(void);
 
 /* Helper function used in task 0 */
 int _putchar(char c);
 
-#endif /* MAIN_H */
-
+#endif
