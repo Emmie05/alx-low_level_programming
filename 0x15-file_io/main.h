@@ -1,8 +1,10 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stddef.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include <unistd.h>
+#include <fcntl.h>
 #include <elf.h>
 
 /* 0-read_textfile.c */
@@ -20,6 +22,8 @@ int main(int argc, char **argv);
 
 /* 100-elf_header.c */
 void print_magic(unsigned char *magic);
+const char *get_osabi_name(unsigned char osabi);
+const char *get_type_name(unsigned int type);
 void print_header(Elf64_Ehdr *header);
 int main(int argc, char **argv);
 
